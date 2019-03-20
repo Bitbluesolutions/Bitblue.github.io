@@ -1,0 +1,520 @@
+/*--------Default Sitewide Font-------------*/
+body {
+    
+}   
+/*--------Styling Site Wide Anchors--------------*/
+a {
+    text-decoration: none;
+}
+/*--------Header styles-----------*/
+#header {
+    color: #646464;
+}
+#header .logo a {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#header .logo .fa-bolt {
+    background: #0579b1;
+    padding: 4px 9px;
+    border-radius: 50%;
+    color: #fff;
+}
+#header .logo-text {
+    position: relative;
+    top: -12px;
+    left: -20px;
+}
+#header .nav {
+    text-align: right;
+}
+#header .nav a {
+    line-height: 5;
+    color: #6B6565;
+    display: inline-block;
+    padding: 0 1em;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+#header .nav a:hover {
+    color: #000;
+}
+#header a.not-a-link {
+    color: inherit;
+    font-weight: 100; 
+}
+#header .nav a.not-a-link:hover {
+    background-color: inherit;
+    cursor: default;
+}
+#hero .mrkt-msg {
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #9ecaed;
+    padding-top: 15px;
+}
+#dextro-list, #pabulum-list, #hospo-list {
+    display: none;
+}
+@media screen and (min-width: 680px) {
+    #menu {
+        display: none;
+    }
+}
+/*----Responsive menu hack for mobile view----*/
+@media screen and (max-width: 680px) {
+    #hero img {
+        height: 180px !important;
+    }
+    #navigator {
+        display: none;
+    }
+    #header .u-pull-right {
+        float: none;
+    }
+    #header .logo {
+        border-bottom: 2px solid;
+    }
+    #header .logo .logo-text {
+        font-size: 1.5rem
+    }
+    #menu {
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        /*position: absolute;
+        top: 2rem;
+        right: 1rem;*/
+        float: right;
+        padding-top: 1.5rem;
+    }
+    #menu:hover {
+        cursor: pointer;
+        color: #0a4f7d;
+    }
+    #header nav a {
+        line-height: 3.2;
+    }
+    #header #navigator a {
+        display: block;
+        text-align: left;
+    }
+    #header #navigator a:hover {
+        color: #000;
+    }
+    #header #navigator a.not-a-link:hover {
+        background-color: inherit;
+        cursor: default;
+    }
+    .service-desc {
+        margin-top: -40px !important;
+    }
+    #dextro-table, #pabulum-table, #hospo-table {
+        display: none;
+    }
+    #dextro-list, #pabulum-list, #hospo-list {
+        display: block;
+    }
+    #jobs-tone, #about-tone {
+        font-size: 1.8rem;
+        width: 100% !important;
+    }
+}
+/*----------Hero styles-----------*/
+#hero {
+    background: url('../img/floor-bg.png') left no-repeat;
+    background-color: #2C6286;/*#09f;/*#495761;*/
+    padding: 125px 0;
+    text-align: center;
+    color: #fff;
+}
+#hero h1 {
+    font-family: 'Roboto Slab', 'Roboto', sans-serif;
+}
+#hero p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+/*------------Figures-------------*/
+#figures {
+    background-color: #0a4f7d;;
+    color: #fff;
+    text-align: center;
+}
+#figures span {
+    display: block;
+    padding: 1em;
+}
+/*-----------Products-------------*/
+.products .row {
+    margin-bottom: 4rem;
+}
+.products h2, .services h2 {
+    padding: 2.5rem 0;
+    font-size: 3rem;
+    background-color: #ccc;
+    margin-bottom: 2em;
+    /*text-shadow: 4px 4px 2px #505050;*/
+}
+.products h3, .services h3 {
+    font-size: 2rem;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.products h3 {
+    color: #646464;
+}
+.products span, .services span {
+    display: inline-block;
+    text-align: left;
+}
+.product-btm {
+    border-bottom: 2px solid #0a4f7d;
+    padding-bottom: 3em;
+}
+.product-description {
+    /*border-right: 1px solid #ccc;*/
+}
+.product-description p {
+    text-align: left;
+}
+.product-description a {
+    color: #c30000;
+}
+.product {
+    height: 100px;
+    line-height: 100px;
+}
+.product-video {
+    height: 270px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    background-color: #ececec;
+}
+.service-icon {
+    padding: 30px;
+    border-radius: 50%;
+    border: 2px solid;
+    font-size: 2.8rem !important;
+}
+.ico-orange {
+    color: #FFA500;
+}
+.ico-red {
+    color: #cd5c5c;
+}
+.ico-blue {
+    color: #6495ED;
+}
+.ico-yellow {
+    color: #ffff00;
+}
+.ico-green {
+    color: #38A538;
+}
+.ico-lightblue {
+    color: #09a;
+}
+/*----These are temporary-----*/
+.red-dextro {
+    background-color: #cd5c5c;
+}
+.blue-pabulum {
+    background-color: #0a4f7d;
+}
+.orange-crestron {
+    background-color: #ffa500;
+}
+.green-hospo {
+    background-color: #00804b;
+}
+.box {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 4rem;
+    background-color: #143A54;
+    padding-top: 5rem;
+    height: 220px;
+}
+.service-desc {
+    padding-top: 2rem;
+    text-align: center !important;
+}
+.green-box {
+    background-color: #00804b;
+}
+.green-box:hover {
+    
+}
+.orange-box {
+    background-color: #ffa500;
+}
+.red-box {
+    background-color: #af2424;
+}
+.grey-box {
+    background-color: #ccc;
+}
+.pink-box {
+    background-color: #ff616a;
+}
+.blue-box {
+    background-color: #0a4f7d;
+}
+.sea-box {
+    background-color: #8fbc8f;
+}
+.logo {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #776b6b;
+    padding: 0 2rem;
+}
+.process-msg {
+    background: url('../img/pattern.png');
+    background-color: #337562 !important;
+}
+.process span  {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.process h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+.process p {
+    text-align: center;
+}
+.process span .fa {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 3rem;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    -webkit-box-shadow: 0px 10px 33px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 33px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 33px -2px rgba(0,0,0,0.75);
+}
+.process h4 {
+    padding-top: 1rem;
+}
+.process span .fa-file-text-o {
+    background-color: #cd5c5c;
+}
+.process span .fa-desktop {
+    background-color: #0a4f7d;
+}
+.process span .fa-code {
+    background-color: #ffa500;
+}
+.process span .fa-rocket {
+    /*background-color: #00804b;*/
+    background-color: #167ac6;
+}
+/*-------Font Icons---------*/
+.fa-university, .fa-user, .fa-cog, .fa-home, .fa-gamepad {
+    line-height: 4rem !important;
+    width: 4rem;
+    border-radius: 50%;
+    color: #fff;
+}
+.fa-university {
+    background-color: #cd5c5c;
+}
+.fa-user {
+    background-color: #09f;
+}
+.fa-cog {
+    background-color: #07b76e;
+}
+.fa-gamepad {
+    background-color: #ffa500;
+}
+.fa-home {
+    background-color: #dc6479;
+}
+.fa-heart {
+    color: #c74343;
+}
+/*---------Show Hide----------*/
+#dextro-info, #pabulum-info, #hospo-info, #crestron-info {
+    display: none;
+}
+#dextro-info p, #pabulum-info p, #hospo-info p, #crestron-info p {
+    text-align: justify;
+}
+/*---------Contact----------------*/
+#contact {
+    margin-top: 4rem;
+    background: #30444a;
+    color: #fff;
+    padding: 30px 0 18px 0;
+    text-align: center;
+}
+#contact a {
+    color: #fff;
+    margin-top: 25px;
+}
+/*------Contact Page-----------*/
+#contact-page {
+    background-color: #30444a;
+    color: #fff;
+}
+#contact-page p {
+    line-height: 4;
+    text-align: center;
+    font-size: 2rem;
+}
+.address {
+    padding: 10px
+}
+.address .bold {
+    color: #0a4f7d;
+    border-bottom: 1px solid;
+}
+.address span {
+    display: inline-block;
+    padding-right: 4rem;
+}
+.address .fa {
+    color: #646464;
+}
+/*--------Contact Form-----------*/
+::-webkit-input-placeholder {
+   color: #646464;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #646464;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #646464;  
+}
+
+:-ms-input-placeholder {  
+   color: #646464;  
+}
+#contact-form input, #contact-form textarea {
+    border: 1px solid #646464;
+}
+/*---------About Us----------*/
+#about-page-header {
+    height: 60vh;
+    background: #2C6286;/*url('../img/team.jpg') no-repeat center;*/
+    background-size: cover;
+}
+#about-tone {
+    width: 60%;
+    margin: 0 auto;
+}
+.about-us-tone {
+    font-size: 2.2rem;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+}
+.about-us-details {
+    border: 1px solid #ccc;
+    background: #e9e9e9;
+    padding: 1rem;
+    text-align: justify;
+}
+.pad {
+    padding-top: 4rem;
+}
+.about-us-details .bold {
+    color: #cd5c5c;
+    border-bottom: 1px solid;
+}
+/*--------------Jobs-------------*/
+#jobs {
+    text-align: center;
+}
+#jobs i {
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: inline-block;
+    color: #09a;
+    font-weight: 700;
+    font-size: 2rem;
+}
+#jobs-tone {
+    font-size: 2.5rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.jobs {
+    font-family: 'Roboto';
+    color: #646464;font-size: 2rem;
+    font-weight: 100
+}
+/*---------Footer-----------------*/
+#footer {
+    padding: 50px 0;
+    background-color: #000;
+}
+#footer h4 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 2rem;
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+}
+#footer a {
+    display: block;
+    line-height: 2;
+    color: #757575;
+}
+#footer span {
+    display: block;
+    margin-top: 25px;
+    font-size: 1rem;
+    text-align: center;
+}
+/*--------Reusable Shades---------*/
+.black {
+    color: #000;
+}
+.white {
+    color: #fff;
+}
+.blue {
+    color: #0a4f7d;
+}
+.custom-border {
+    border-top: 5px solid #646464;
+}
+.orange-border {
+    border-top: 5px solid orange;
+}
+.yellow-bg {
+    background-color: #fff298 !important;
+}
+/*----------Custom Utility Classes---------*/
+.fnt {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.cntr-txt {
+    text-align: center;
+}
+.bold {
+    font-weight: 700;
+}
+/*---------Plugin Styles------------------*/
+#fb {
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    max-width: 100%;
+}
+#tw {
+    border: 1px solid #ccc;
+    margin-bottom: 3rem;
+}
